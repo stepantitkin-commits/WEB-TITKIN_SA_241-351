@@ -6,7 +6,6 @@ body {
     margin: 0;
     font-family: "Montserrat", Arial, sans-serif;
     color: #222;
-    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -17,10 +16,9 @@ body {
 }
 
 /* HEADER */
-
 .site-header {
-    border-bottom: 1px solid #e0e0e0;
     padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .header-inner {
@@ -29,102 +27,99 @@ body {
     align-items: center;
 }
 
-.logo {
-    font-size: 28px;
-    font-weight: 700;
-}
-
 .main-nav a {
     margin-left: 20px;
     text-decoration: none;
-    font-size: 17px;
     color: #111;
-    font-weight: 500;
+    font-size: 16px;
 }
 
 .main-nav a:hover {
-    color: #d66;
+    color: #f4a97a;
 }
 
 /* SECTIONS */
-
 .section {
     padding: 40px 0;
 }
 
 .hero-image {
     width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 15px;
+    border-radius: 20px;
 }
 
 /* TABLE */
-
 .dishes-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 15px;
 }
-
-.dishes-table th,
-.dishes-table td {
+.dishes-table td, .dishes-table th {
     border: 1px solid #333;
     padding: 10px;
-    text-align: left;
 }
 
-/* FEEDBACK FORM */
 
-.feedback form {
+/* === UI CARD (Формы) === */
+.ui-card {
+    background: white;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    max-width: 520px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    max-width: 500px;
+    gap: 18px;
 }
 
-.feedback input,
-.feedback select,
-.feedback textarea {
-    padding: 10px;
+/* Поля */
+.ui-card input,
+.ui-card select,
+.ui-card textarea {
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
     font-size: 16px;
 }
 
-/* AUTH FORM */
 
-.auth-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 350px;
+/* === СЕРЫЕ PLACEHOLDER === */
+input::placeholder,
+textarea::placeholder {
+    color: #888;
+    opacity: 1; /* делаем НЕ прозрачным */
+    font-weight: 500;
 }
 
-.auth-form input {
-    padding: 10px;
-    font-size: 16px;
+
+/* === МЯГКИЕ КНОПКИ === */
+.btn-main {
+    background: #FFB37A;
+    color: #fff;
+    padding: 14px 20px;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.25s;
 }
+
+.btn-main:hover {
+    background: #E9A16E;
+    box-shadow: 0 5px 15px rgba(233,161,110,0.35);
+    transform: translateY(-2px);
+}
+
 
 /* FOOTER */
-
 .site-footer {
+    padding: 25px 0;
     background: #000;
     color: #fff;
-    padding: 25px 0;
-    margin-top: 40px;
-    font-size: 14px;
 }
 
 .site-footer a {
     color: #fff;
     text-decoration: none;
-}
-
-.site-footer a:hover {
-    text-decoration: underline;
 }
