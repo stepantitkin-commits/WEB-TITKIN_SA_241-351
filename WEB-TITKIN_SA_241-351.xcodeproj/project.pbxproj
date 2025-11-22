@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		848C62CE2ED14D7100CE4DB9 /* login.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = login.html; sourceTree = "<group>"; };
 		84A956BA2ED0F042001A907B /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		84A956BB2ED0F05F001A907B /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -15,6 +16,7 @@
 		84A956B32ED0E8E2001A907B = {
 			isa = PBXGroup;
 			children = (
+				848C62CE2ED14D7100CE4DB9 /* login.html */,
 				84A956BA2ED0F042001A907B /* index.html */,
 				84A956BB2ED0F05F001A907B /* style.css */,
 			);

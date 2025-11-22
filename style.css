@@ -1,21 +1,23 @@
+/* Универсальный селектор */
 * {
     box-sizing: border-box;
 }
-
 
 body {
     margin: 0;
     font-family: "Montserrat", Arial, sans-serif;
     font-size: 16px;
-    color: #222222;
+    color: #222;
     line-height: 1.5;
 }
+
 
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
 }
+
 
 .site-header {
     border-bottom: 1px solid #e0e0e0;
@@ -33,15 +35,14 @@ body {
     font-weight: 700;
 }
 
+
 .main-nav a {
     margin-left: 20px;
     text-decoration: none;
-    font-family: inherit;
     font-size: 16px;
-    color: #111111;
+    color: #111;
     transition: color 0.2s;
 }
-
 .main-nav a:hover {
     color: #ff6b00;
 }
@@ -51,12 +52,14 @@ body {
     padding: 40px 0;
 }
 
+
 .hero-image {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
     display: block;
 }
+
 
 .about h2,
 .advantages h2,
@@ -66,7 +69,7 @@ body {
     margin-bottom: 15px;
 }
 
-/* Преимущества */
+
 .advantages ul {
     padding-left: 20px;
 }
@@ -74,6 +77,7 @@ body {
 .advantages li {
     margin-bottom: 8px;
 }
+
 
 .dishes-table {
     width: 100%;
@@ -83,28 +87,29 @@ body {
 
 .dishes-table th,
 .dishes-table td {
-    border: 1px solid #333333;
+    border: 1px solid #333;
     padding: 10px 12px;
     text-align: left;
 }
 
-/* Футер */
+
 .site-footer {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: black;
+    color: white;
     padding: 20px 0;
     margin-top: 40px;
-    font-size: 14px;
 }
 
 .site-footer a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
 }
 
 .site-footer a:hover {
     text-decoration: underline;
 }
+
+
 .feedback form {
     display: flex;
     flex-direction: column;
@@ -119,22 +124,26 @@ body {
     font-size: 16px;
     width: 100%;
 }
+
+
 .auth-section {
-    height: 100vh; /* на весь экран */
+    height: 100vh;
+    width: 100%;
+    background-image: url("olive.jpeg");
+    background-size: cover;
+    background-position: center;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background-image: url("about-photo.jpg"); /* подставь свой файл */
-    background-size: cover;
-    background-position: center;
+    padding: 20px;
 }
 
-.auth-form {
-    background: rgba(255, 255, 255, 0.9);
+.auth-form { /
+    background: rgba(255,255,255,0.9);
     padding: 30px;
-    border-radius: 10px;
     width: 320px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -144,3 +153,4 @@ body {
     padding: 10px;
     font-size: 16px;
 }
+
