@@ -10,30 +10,25 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header class="site-header">
     <div class="container header-inner">
         <h1 class="logo">Food Construct</h1>
-
         <nav class="main-nav">
             <a href="#about">О нас</a>
-            <a href="#constructor">Собрать ланч</a>
-            <a href="#orders">Заказы</a>
             <a href="#contacts">Контакты</a>
-            <a href="login.html">Вход</a>
         </nav>
     </div>
 </header>
 
+
 <main>
 
-    
+    <!-- БЛОК О НАС -->
     <section id="about" class="section about">
         <div class="container">
-            <img class="hero-image" src="foodtable.webp" alt="Бизнес-ланчи Food Construct">
-
+            <img class="hero-image" src="food.png" alt="Food Construct">
             <h2>О нас</h2>
             <p>
                 <strong>Food Construct</strong> — доставка бизнес-ланчей в Москве.
@@ -42,7 +37,8 @@
         </div>
     </section>
 
- 
+
+    <!-- ПРЕИМУЩЕСТВА -->
     <section class="section advantages">
         <div class="container">
             <h2>Преимущества Food Construct</h2>
@@ -54,6 +50,8 @@
         </div>
     </section>
 
+
+    <!-- ТАБЛИЦА -->
     <section class="section popular">
         <div class="container">
             <h2>Топ-5 популярных блюд</h2>
@@ -63,37 +61,24 @@
                 <tr>
                     <th>№</th>
                     <th>Название</th>
-                    <th>Кол-во заказов</th>
+                    <th>Кол-во заказов в неделю</th>
                     <th>Цена</th>
                 </tr>
                 </thead>
+
                 <tbody>
                 <tr><td>1</td><td>Лазанья</td><td>185</td><td>385 ₽</td></tr>
-                <tr><td>2</td><td>Том Ям</td><td>161</td><td>365 ₽</td></tr>
+                <tr><td>2</td><td>Том Ям с креветками</td><td>161</td><td>365 ₽</td></tr>
                 <tr><td>3</td><td>Норвежский суп</td><td>144</td><td>270 ₽</td></tr>
-                <tr><td>4</td><td>Картошка с грибами</td><td>132</td><td>150 ₽</td></tr>
-                <tr><td>5</td><td>Котлеты с пюре</td><td>128</td><td>225 ₽</td></tr>
+                <tr><td>4</td><td>Жареная картошка с грибами</td><td>132</td><td>150 ₽</td></tr>
+                <tr><td>5</td><td>Котлеты из курицы с картофельным пюре</td><td>128</td><td>225 ₽</td></tr>
                 </tbody>
             </table>
         </div>
     </section>
 
-    
-    <section id="constructor" class="section">
-        <div class="container">
-            <h2>Собрать ланч</h2>
-            <p>Скоро появится конструктор бизнес-ланча.</p>
-        </div>
-    </section>
 
-    <section id="orders" class="section">
-        <div class="container">
-            <h2>Заказы</h2>
-            <p>Вы можете оформить заказ по телефону или через личный кабинет.</p>
-        </div>
-    </section>
-
-
+    <!-- ОБРАТНАЯ СВЯЗЬ -->
     <section class="section feedback">
         <div class="container">
             <h2>Обратная связь</h2>
@@ -134,6 +119,32 @@
                 </label>
 
                 <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- ФОРМА ВХОДА (внизу страницы) -->
+    <section class="section auth">
+        <div class="container">
+            <h2>Вход</h2>
+
+            <form class="auth-form" onsubmit="alert('Вход выполнен'); return false;">
+
+                <label>Логин:
+                    <input type="text" required>
+                </label>
+
+                <label>Пароль:
+                    <input type="password" required>
+                </label>
+
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Запомнить меня
+                </label>
+
+                <button type="submit">Войти</button>
 
             </form>
         </div>
@@ -141,6 +152,8 @@
 
 </main>
 
+
+<!-- ФУТЕР -->
 <footer id="contacts" class="site-footer">
     <div class="container">
         <p>Позвонить нам: <a href="tel:+70000000000">+7-000-000-00-00</a></p>
