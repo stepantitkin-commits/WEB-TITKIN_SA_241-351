@@ -1,1 +1,107 @@
+* {
+    box-sizing: border-box;
+}
 
+
+body {
+    margin: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 16px;
+    color: #222222;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;           /* margin для блоков */
+    padding: 0 20px;          /* padding для блоков */
+}
+
+.site-header {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.main-nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 16px;
+    color: #111111;
+    transition: color 0.2s;
+}
+
+.main-nav a:hover {
+    color: #ff6b00;
+}
+
+
+.section {
+    padding: 40px 0;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.about h2,
+.advantages h2,
+.popular h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Преимущества */
+.advantages ul {
+    padding-left: 20px;
+}
+
+.advantages li {
+    margin-bottom: 8px;
+}
+
+.dishes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.dishes-table th,
+.dishes-table td {
+    border: 1px solid #333333;
+    padding: 10px 12px;
+    text-align: left;
+}
+
+/* Футер */
+.site-footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.site-footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
